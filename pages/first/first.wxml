@@ -1,0 +1,25 @@
+<!--pages/first/first.wxml-->
+<view class=".page">
+
+  <view class=".item" wx:for="{{8}}" wx:key="index" bindtap="route" data-id="{{index+1}}">
+    <view class="itemleft">
+      <view class="itemtitle">这里是标题{{index+1}}</view>
+      <view class="itemcontent">这里是内容</view>
+      <view class="itemtime">这里是时间</view>
+    </view>
+    <view class="itemimg"></view>
+  </view>
+
+
+
+</view>
+
+<!--信息确认 -->
+<view class=".mask" wx:if="{{showWindow}}" catchtouchmove="return">
+  <view class=".windowcontent">
+    <view class="title">确认信息</view>
+
+
+    <view class="title" bindtap="showWindow">保存</view>
+  </view>
+</view>

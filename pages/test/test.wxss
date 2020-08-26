@@ -1,1 +1,27 @@
 /* pages/test/test.wxss */
+
+button::after{
+content: "345"
+}
+
+button::backdrop{
+  content: "123"
+}
+
+
+.test{
+  width: 200rpx;
+  height: 50rpx;
+  background: #ffffff;
+}
+
+.test::before{
+  content: "11"
+}
+
+.test::after{
+  content: "22"
+}
+.test::first-letter{
+  content: "A"
+}

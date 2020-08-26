@@ -1,14 +1,25 @@
 <!--pages/test/test.wxml-->
-<button type="primary" loading="true" > button</button>
+<view style="width:100%;height:100%;background:#999999">
+  <!-- <button type="primary" loading="true" > button</button>
 
-<button type="primary" loading="true" > button</button>
+  <button type="primary" loading="true"> button</button>
 
-<button type="primary" loading="true" open-type="contact" bindcontact="testbindcontact"> contact</button>
-<button type="primary" open-type="share" >share </button>
-<button type="primary" open-type="getPhoneNumber" bindgetphonenumber="testgetphone" lang="zh_CN">getPhoneNumber </button>
-<button type="primary" open-type="getUserInfo" bindgetuserinfo="bindgetuserinfo">getUserInfo </button>
-<button type="primary" open-type="launchApp" >launchApp </button>
-<button type="primary" open-type="openSetting" >openSetting </button>
-<button type="primary" open-type="feedback" >feedback </button>
+  <button type="primary" loading="true" open-type="contact" bindcontact="testbindcontact"> contact</button>
+  <button type="primary" open-type="share">share </button>
+  <button type="primary" open-type="getPhoneNumber" bindgetphonenumber="testgetphone" lang="zh_CN">getPhoneNumber </button>
+  <button type="primary" open-type="getUserInfo" bindgetuserinfo="bindgetuserinfo">getUserInfo </button>
+  <button type="primary" open-type="launchApp">launchApp </button>
+  <button type="primary" open-type="openSetting">openSetting </button>
+  <button type="primary" open-type="feedback">feedback </button> -->
 
+  <!-- <button type="primary">123</button> -->
 
+  <view wx:for="{{4}}" class="test" wx:if="{{index==0}}">ceshi {{index}}</view>
+  <view wx:for="{{4}}" class="test" wx:if="{{index==1}}">ceshi {{index}}</view>
+  <view wx:for="{{4}}" class="test" wx:if="{{index==2}}">ceshi {{index}}</view>
+  <view wx:for="{{4}}" class="test" wx:if="{{index==3}}">ceshi {{index}}</view>
+
+  <view>
+  
+  </view>
+</view>

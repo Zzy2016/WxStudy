@@ -1,4 +1,4 @@
-// pages/test/test.js
+// pages/SDS/SDS.js
 Page({
 
   /**
@@ -6,27 +6,6 @@ Page({
    */
   data: {
 
-  },
-
-
-  testbindcontact:function(e){
-    console.log("-------contact")
-  },
-
-  testgetphone:function(e){
-    console.log("获取手机号")
-    console.log(e.detail)
-    console.log(e)
-    console.log(e.detail.encryptedData)
-
-    
-  },
-
-
-  bindgetuserinfo:function(e){
-    console.log(e)
-    console.log(e.detail.rawData)
-    
   },
 
   /**
