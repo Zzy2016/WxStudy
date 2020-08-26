@@ -6,6 +6,7 @@ Page({
    */
   data: {
     showWindow: false,
+    lastClickTime:0,
   },
 
   // 修改状态显示窗口
@@ -15,10 +16,21 @@ Page({
     })
   },
   // 显示不同页面 url: '/pages/SDS/SDS',
+  // 防止多次点击
   route: function(e) {
     console.log(e.currentTarget.dataset.id)
     let id = e.currentTarget.dataset.id;
     console.log("---------" + id)
+
+    var nowTime=new Date();
+    if(nowTime-this.data.lastClickTime<1000){
+      return;
+    }
+
+    this.setData({
+      lastClickTime:nowTime
+    })
+
     switch (id) {
       case 1:
         wx.navigateTo({

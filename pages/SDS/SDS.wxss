@@ -1,1 +1,65 @@
 /* pages/SDS/SDS.wxss */
+
+.page {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 底部控制 */
+.control {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  background: #fafafa;
+  align-items: center;
+  
+}
+
+/* 下一题 */
+.controlitem {
+  width: 70%;
+  height: 60rpx;
+  background: #50c9d5;
+  border-radius: 7px;
+  color: #fff;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+.controlitemleft {
+  width: 30%;
+  height: 60rpx;
+  background: #50c9d5;
+  border-radius: 7px;
+  color: #fff;
+  text-align: center;
+  line-height: 60rpx;
+  margin-left: 5%
+}
+
+.controlitemright {
+  width: 30%;
+  height: 60rpx;
+  background: #50c9d5;
+  border-radius: 7px;
+  color: #fff;
+  text-align: center;
+  line-height: 60rpx;
+  margin-right: 5%
+}
+
+
+/* 题目样式 */
+
+.item {
+  width: 100%;
+  height: auto;
+}
+
+
+

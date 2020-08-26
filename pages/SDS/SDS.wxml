@@ -1,2 +1,24 @@
 <!--pages/SDS/SDS.wxml-->
-<text>pages/SDS/SDS.wxml</text>
+<view class="page">
+
+  <!-- 题目 -->
+  <view class="item" wx:for="{{allQuestionCount}}" wx:if="{{index==questionIndex}}">
+    <view  >指导语：请根据您过去一周的情况进行选择，请选择相应的份数 {{index}}</view>
+
+  
+
+  </view>
+
+
+  <!-- 控制 -->
+  <view class="control">
+    <!-- 第一题 -->
+    <view  class="controlitem" wx:if="{{questionIndex==1}}" bindtap="down">下一题</view>
+
+
+    <!-- 其他题 -->
+    <view class="controlitemleft" wx:if="{{questionIndex!=1}}" bindtap="up">上一题</view>
+    <view class="controlitemright" wx:if="{{questionIndex!=1}}" bindtap="down">{{btnText}}</view>    
+  </view>
+
+</view>
