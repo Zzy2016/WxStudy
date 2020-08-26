@@ -1,0 +1,14 @@
+<!--pages/test/test.wxml-->
+<button type="primary" loading="true" > button</button>
+
+<button type="primary" loading="true" > button</button>
+
+<button type="primary" loading="true" open-type="contact" bindcontact="testbindcontact"> contact</button>
+<button type="primary" open-type="share" >share </button>
+<button type="primary" open-type="getPhoneNumber" bindgetphonenumber="testgetphone" lang="zh_CN">getPhoneNumber </button>
+<button type="primary" open-type="getUserInfo" bindgetuserinfo="bindgetuserinfo">getUserInfo </button>
+<button type="primary" open-type="launchApp" >launchApp </button>
+<button type="primary" open-type="openSetting" >openSetting </button>
+<button type="primary" open-type="feedback" >feedback </button>
+
+
