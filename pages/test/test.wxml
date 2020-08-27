@@ -19,6 +19,8 @@
   <view wx:for="{{4}}" class="test" wx:if="{{index==2}}">ceshi {{index}}</view>
   <view wx:for="{{4}}" class="test" wx:if="{{index==3}}">ceshi {{index}}</view>
 
+  <picker bindchange="bindpick"  range="{{test}}"  class="test1" value="{{test[checkIndex]}}">{{test[checkIndex]}}</picker>
+
   <view>
   
   </view>

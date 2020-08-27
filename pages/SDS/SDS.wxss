@@ -159,16 +159,3 @@
 .completetext2 {
   margin-top: 10rpx;
 }
-
-
-/* 日期选择 */
-
-/* 蒙版 */
-.mask{
-  width: 100%;
-  height: 100%;
-  background: #66666666;
-  position: fixed;
-  top: 0;
-}
-/* 选择框 */

@@ -25,3 +25,12 @@ button::backdrop{
 .test::first-letter{
   content: "A"
 }
+
+.test1{
+    width: 100rpx;
+    height: 40rpx;
+    border: 1px solid #666666;
+    border-radius: 10rpx;
+    text-align: center;
+    line-height: 40rpx;
+}

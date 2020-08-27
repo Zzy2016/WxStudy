@@ -66,6 +66,20 @@
 					"id": -1,
 					"name": "SDS",
 					"pathName": "pages/SDS/SDS",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "test",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Login",
+					"pathName": "pages/SDS/SDS",
 					"scene": null
 				}
 			]

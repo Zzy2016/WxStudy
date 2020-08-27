@@ -14,8 +14,8 @@
     <view class="ans1" wx:if="{{index<3}}">
       <view>点击数字进行选择影响程度</view>
 
-      <radio-group class="groupcss">
-        <radio wx:for="{{11}}"></radio>
+      <radio-group class="groupcss" bindchange="doCheckDay">
+        <radio wx:for="{{11}}" value="{{index}}" checked="{{index==ansArr[questionIndex-1]}}">  </radio>
       </radio-group>
 
       <view class="indi">
@@ -26,6 +26,9 @@
         <view class="indi1" style="background:#F7BBC1">严重</view>
       </view>
 
+
+     
+
     </view>
 
     <!-- 单选1附加选项 -->
@@ -34,12 +37,12 @@
       <view>*工作包括有收入的、无收入的、志愿的工作或培训</view>
     </view>
 
-    <!-- 次数选择 wx:if="{{index>=3}}"-->
-    <view class="checkcss">
+    <!-- 次数选择-->
+    <view class="checkcss"  wx:if="{{index>=3}}">
       <view>请点击选择天数</view>
 
       <view class="checkcss1">
-        <view class="days">1</view>
+        <picker class="days" range="{{days}}" bindchange="doCheckDay">{{days[ansArr[index]]}}</picker>
         <view class="days1">天</view>
       </view>
     </view>
@@ -72,9 +75,3 @@
 
 </view>
 
-<!-- 日期选择 -->
-<!-- <view class="mask">
-  <view >
-
-  </view>
-</view> -->
