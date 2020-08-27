@@ -1,24 +1,80 @@
 <!--pages/SDS/SDS.wxml-->
 <view class="page">
 
-  <!-- 题目 -->
-  <view class="item" wx:for="{{allQuestionCount}}" wx:if="{{index==questionIndex}}">
-    <view  >指导语：请根据您过去一周的情况进行选择，请选择相应的份数 {{index}}</view>
+  <!-- 题目 问卷未填写时显示此页-->
+  <view class="item" wx:for="{{allQuestionCount}}" wx:if="{{index+1==questionIndex&&!isSave}}">
+    <view wx:if="{{questionIndex==1}}">指导语：请根据您过去一周的情况进行选择，请选择相应的份数</view>
+    <view wx:if="{{questionIndex!=1}}" style="color:#ffffff">指导语：请根据您过去一周的情况进行选择，请选择相应的份数</view>
 
-  
+    <!-- 题目描述 -->
+    <view>{{index+1}}、 {{questionContent[index]}}:</view>
 
+
+    <!-- 程度选择 -->
+    <view class="ans1" wx:if="{{index<3}}">
+      <view>点击数字进行选择影响程度</view>
+
+      <radio-group class="groupcss">
+        <radio wx:for="{{11}}"></radio>
+      </radio-group>
+
+      <view class="indi">
+        <view class="indi1" style="background:#EEEEEE">无</view>
+        <view class="indi2" style="background:#FDEDD3">轻度</view>
+        <view class="indi2" style="background:#FDE5D3">中度</view>
+        <view class="indi2" style="background:#FBDDE0">明显</view>
+        <view class="indi1" style="background:#F7BBC1">严重</view>
+      </view>
+
+    </view>
+
+    <!-- 单选1附加选项 -->
+    <view style="margin-top:20rpx;" wx:if="{{questionIndex==1}}">
+      <checkbox>过去一周我根本没有工作/学习，但是原因和疾病无关</checkbox>
+      <view>*工作包括有收入的、无收入的、志愿的工作或培训</view>
+    </view>
+
+    <!-- 次数选择 wx:if="{{index>=3}}"-->
+    <view class="checkcss">
+      <view>请点击选择天数</view>
+
+      <view class="checkcss1">
+        <view class="days">1</view>
+        <view class="days1">天</view>
+      </view>
+    </view>
+
+
+
+  </view>
+
+  <!-- 提交完成页  问卷填写完成，显示此页-->
+  <view class="complete" wx:if="{{isSave}}">
+    <image src="" class="completeimg"></image>
+    <view class="completetext1">当前随访问卷提交成功</view>
+    <view class="completetext2">距离下次填写还有{{}}天</view>
   </view>
 
 
   <!-- 控制 -->
   <view class="control">
     <!-- 第一题 -->
-    <view  class="controlitem" wx:if="{{questionIndex==1}}" bindtap="down">下一题</view>
+    <view class="controlitem" wx:if="{{questionIndex==1&&!isSave}}" bindtap="down">下一题</view>
 
 
     <!-- 其他题 -->
-    <view class="controlitemleft" wx:if="{{questionIndex!=1}}" bindtap="up">上一题</view>
-    <view class="controlitemright" wx:if="{{questionIndex!=1}}" bindtap="down">{{btnText}}</view>    
+    <view class="controlitemleft" wx:if="{{questionIndex!=1&&!isSave}}" bindtap="up">上一题</view>
+    <view class="controlitemright" wx:if="{{questionIndex!=1&&!isSave}}" bindtap="down">{{btnText}}</view>
+
+    <!-- 提交成功 -->
+    <view class="controlitem" wx:if="{{isSave}}" bindtap="down">返回首页</view>
   </view>
 
 </view>
+
+<!-- 日期选择 -->
+<!-- <view class="mask">
+  <view >
+
+  </view>
+</view> -->
