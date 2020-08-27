@@ -1,1 +1,88 @@
 /* pages/Login/Login.wxss */
+
+.page {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  width: 70%;
+  height: auto;
+  color: #000;
+  font-size: 23px;
+  text-align: center;
+  margin-top: 20%;
+  margin-left: 15%;
+}
+
+.title1 {
+  width: 60%;
+  height: auto;
+  color: #000;
+  font-size: 23px;
+  text-align: center;
+  margin-left: 20%;
+}
+
+.login {
+  width: 60%;
+  height: auto;
+  color: #000;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20%;
+}
+
+.hint1 {
+  margin-top: 50rpx;
+  color: #939393;
+  margin-left: 20%;
+  font-size: 28rpx;
+}
+
+.hint2 {
+  margin-top: 30rpx;
+  color: #939393;
+  margin-left: 20%;
+  font-size: 28rpx;
+}
+
+input {
+  width: 60%;
+  height: 40rpx;
+  border: 1px solid #999;
+  border-radius: 3px;
+  font-size: 25rpx;
+  margin-top: 30rpx;
+  padding-left: 5rpx;
+  margin-left: 20%;
+}
+
+.error {
+  color: #ff1212;
+  margin-left: 20%;
+  font-size: 20rpx;
+  margin-top: 10rpx;
+}
+
+.hint3{
+  color: #000000;
+  margin-left: 20%;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+  width: 60%;
+  
+}
+
+.ensure{
+  color:#ffffff;
+  width: 60%;
+  height: 80rpx;
+  background:#50c9d5; 
+  margin-left: 20%;
+  border-radius: 3px;
+  line-height: 80rpx;
+  text-align: center;
+  margin-top: 40rpx;
+}

@@ -77,9 +77,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "Login",
-					"pathName": "pages/SDS/SDS",
+					"id": 4,
+					"name": "pages/Login/Login",
+					"pathName": "pages/Login/Login",
+					"query": "",
 					"scene": null
 				}
 			]
