@@ -82,6 +82,13 @@
 					"pathName": "pages/Login/Login",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "radio",
+					"pathName": "pages/radiotest/radiotest",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

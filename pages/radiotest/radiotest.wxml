@@ -1,0 +1,10 @@
+<!--pages/radiotest/radiotest.wxml-->
+<view class='title'>radio单选标签</view>
+<radio-group bindchange="radioChange">
+  <view class="radioall">
+    <label class="label" wx:for="{{11}}">
+      <radio value="{{item.value}}" checked="{{item.checked}}" ></radio>
+      <view class="text">{{item}}</view>
+    </label>
+  </view>
+</radio-group>

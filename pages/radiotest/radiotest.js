@@ -1,42 +1,41 @@
-// pages/test/test.js
+// pages/radiotest/radiotest.js
 Page({
 
   /**
-   * 页面的初始数据  json
+   * 页面的初始数据
    */
   data: {
-    test: [1, 2, 3, 4, 5, 6, 7],
-    checkIndex:0,
-  },
+    data: {
+      items: [{
+          value: 'USA',
+          name: '美国'
+        },
+        {
+          value: 'CH',
+          name: '中国'
+        },
+        {
+          value: 'FRA',
+          name: '法国'
+        }
 
+      ],
 
-  testbindcontact: function(e) {
-    console.log("-------contact")
-  },
-
-  testgetphone: function(e) {
-    console.log("获取手机号")
-    console.log(e.detail)
-    console.log(e)
-    console.log(e.detail.encryptedData)
-
-
-  },
-
-  bindpick: function(e) {
-    console.log(e.detail.value)
-    var index=e.detail.value;
-    console.log("------"+this.data.test[index])
-    this.setData({
-      checkIndex:index
-    })
-  },
-
-
-  bindgetuserinfo: function(e) {
-    console.log(e)
-    console.log(e.detail.rawData)
-
+      checkboxItems: [{
+          value: 'USA',
+          name: '美国'
+        },
+        {
+          value: 'CH',
+          name: '中国'
+        },
+        {
+          value: 'FRA',
+          name: '法国'
+        }
+      ]
+    },
+    
 
   },
 
