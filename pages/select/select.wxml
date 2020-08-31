@@ -16,5 +16,9 @@
     <view class="viewindi1" style="background:#f7bbc1;border-left: 1rpx solid #ffffff">严重</view>
   </view>
 </view> -->
-<test bind:doselect='select'></test>
-<test1 num='{{num}}'  bind:changeCount='onChangeCount'></test1>
+
+<!-- <test1 num='{{num}}'  bind:changeCount='onChangeCount'></test1> -->
+
+<view wx:for="{{quesArr}}" wx:if="{{currentQusIndex==index}}">{{index+1}}、{{item}}
+  <test bind:doselect='select' ansindex='{{ansArr[index]}}'>{{ansArr[index]}}</test>
+</view>

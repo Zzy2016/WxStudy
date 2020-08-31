@@ -1,12 +1,12 @@
 <!--pages/Com/selectcheck/selectcheck.wxml-->
 <view class="viewall">
-  <view class="title">点击数字进行选择影响程度{{checkIndex}}</view>
+  <view class="title">点击数字进行选择影响程度</view>
 
   <radio-group bindchange="radioChange">
     <view class="radioall">
       <label class="label" wx:for="{{11}}" wx:key="index">
-        <radio value="{{item}}" checked="{{item.checked}}" color="#248cfa"></radio>
-        <view class="text" style="color:{{checkIndex==index?'#fff':'#333'}}">{{item}}</view>
+        <radio value="{{item}}" checked="{{ansindex==index}}" color="#248cfa"></radio>
+        <view class="text" style="color:{{ansindex==index?'#fff':'#333'}}">{{item}}</view>
       </label>
     </view>
   </radio-group>

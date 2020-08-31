@@ -4,14 +4,18 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    ansindex:{
+      type: Number,
+      value: 12
+    }
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    checkIndex:12,//选择的index
+    checkIndex:12,//选择的index,
+    
   },
 
   /**
@@ -23,7 +27,8 @@ Component({
       console.log(index)
       var that=this
       that.setData({
-        checkIndex: index
+        checkIndex: index,
+        ansindex:index
       })
       that.triggerEvent('doselect',that.data.checkIndex)
     }

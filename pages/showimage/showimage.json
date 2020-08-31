@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "test": "/pages/Com/selectcheck/selectcheck",
+    "test1": "/pages/Com/select1/select1"
+  }
 }
