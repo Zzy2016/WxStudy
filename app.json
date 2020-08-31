@@ -6,7 +6,9 @@
     "pages/first/first",
     "pages/SDS/SDS",
     "pages/Login/Login",
-    "pages/radiotest/radiotest"
+    "pages/radiotest/radiotest",
+    "pages/select/select",
+    "pages/showimage/showimage"
   ],
   "window": {
     "backgroundTextStyle": "light",

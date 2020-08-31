@@ -1,0 +1,3 @@
+<!--pages/showimage/showimage.wxml-->
+<text>pages/showimage/showimage.wxml</text>
+<image src="../../image/gad-7.png"> </image>

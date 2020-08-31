@@ -52,11 +52,18 @@
   font-size: 14px;
 } */
 
+.title{
+  margin-left: 20px;
+  margin-top: 50rpx;
+  font-size: 30rpx;
+  color: #999999;
+}
+
 radio .wx-radio-input {
   width: 50rpx;
   height: 50rpx;
   border-radius: 50%; /* 圆角 *//* border: 2rpx solid red; */
-  
+  background: #ffffff
 }
 
 /* 选中后 背景及勾 的样式 */
@@ -96,5 +103,29 @@ radio .wx-radio-input.wx-radio-input-checked::before {
 .radioall{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.viewindi{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  font-size: 28rpx;
+  color: #999999;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.viewindi1{
+  flex: 1;
+  text-align: center;
+  
+}
+
+.viewindi3{
+  flex: 3;
+  text-align: center;
 }

@@ -1,0 +1,11 @@
+/* pages/select/select.wxss */
+radio .wx-radio-input.wx-radio-input-checked::before {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%; /* 圆角 */
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 0rpx; /* 勾大小 */
+  color: #248cfa; /* 白色勾  */
+  transform: translate(-50%, -50%) scale(1);  
+}

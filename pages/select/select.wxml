@@ -1,0 +1,20 @@
+<!--pages/select/select.wxml-->
+<!-- <view class="viewall">
+  <radio-group bindchange="radioChange">
+    <view class="radioall">
+      <label class="label" wx:for="{{11}}" wx:key="index">
+        <radio value="{{item}}" checked="{{item.checked}}" color="#248cfa"></radio>
+        <view class="text" style="color:{{checkIndex==index?'#fff':'#333'}}">{{item}}</view>
+      </label>
+    </view>
+  </radio-group>
+  <view class="viewindi">
+    <view class="viewindi1" style="background:#eeeeee;">无</view>
+    <view class="viewindi3" style="background:#fdedd3;border-left: 1rpx solid #ffffff">轻度</view>
+    <view class="viewindi3" style="background:#fde5d3;border-left: 1rpx solid #ffffff">中度</view>
+    <view class="viewindi3" style="background:#fbdde0;border-left: 1rpx solid #ffffff">明显</view>
+    <view class="viewindi1" style="background:#f7bbc1;border-left: 1rpx solid #ffffff">严重</view>
+  </view>
+</view> -->
+<test bind:doselect='select'></test>
+<test1 num='{{num}}'  bind:changeCount='onChangeCount'></test1>

@@ -89,6 +89,27 @@
 					"pathName": "pages/radiotest/radiotest",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "select",
+					"pathName": "pages/select/select",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Login",
+					"pathName": "pages/Login/Login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "showimg",
+					"pathName": "pages/showimage/showimage",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

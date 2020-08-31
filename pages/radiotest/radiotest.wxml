@@ -1,10 +1,18 @@
 <!--pages/radiotest/radiotest.wxml-->
-<view class='title'>radio单选标签</view>
+<view class='title'>点击数字进行选择影响程度</view>
 <radio-group bindchange="radioChange">
   <view class="radioall">
-    <label class="label" wx:for="{{11}}">
-      <radio value="{{item.value}}" checked="{{item.checked}}" ></radio>
-      <view class="text">{{item}}</view>
+    <label class="label" wx:for="{{11}}" wx:key="index">
+      <radio value="{{item}}" checked="{{item.checked}}" color="#248cfa" ></radio>
+      <view class="text" style="color:{{checkIndex==index?'#fff':'#333'}}">{{item}}</view>
     </label>
   </view>
 </radio-group>
+<view class="viewindi">
+    <view class="viewindi1" style="background:#ededed">无</view>
+    <view class="viewindi3" style="background:#fdedd3;border-left: 1px solid #fff;">轻度</view>
+    <view class="viewindi3" style="background:#fed5d3;border-left: 1px solid #fff;">中度</view>
+    <view class="viewindi3" style="background:#fbdde0;border-left: 1px solid #fff;">明显</view>
+    <view class="viewindi1" style="background:#f4b8be;border-left: 1px solid #fff;">严重</view>
+    
+</view>
