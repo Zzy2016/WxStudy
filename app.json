@@ -8,8 +8,7 @@
     "pages/Login/Login",
     "pages/radiotest/radiotest",
     "pages/select/select",
-    "pages/showimage/showimage",
-    "pages/Com/Com"
+    "pages/showimage/showimage"
   ],
   "window": {
     "backgroundTextStyle": "light",
