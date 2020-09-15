@@ -22,3 +22,10 @@
 <view wx:for="{{quesArr}}" wx:if="{{currentQusIndex==index}}">{{index+1}}、{{item}}
   <test bind:doselect='select' ansindex='{{ansArr[index]}}'>{{ansArr[index]}}</test>
 </view>
+
+<view style="margin-top:20rpx;margin-left:20rpx;background:#248cfa;width:30rpx;height:30rpx">
+  <checkbox></checkbox>
+  <!-- <text style="margin-left:20rpx">asicbasdcjkadbcfhiw</text> -->
+</view>
+
+<input model:value="{{name}}"></input>

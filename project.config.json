@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -16,6 +16,7 @@
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
 		"babelSetting": {
 			"ignore": [],
 			"disablePlugins": [],
@@ -26,8 +27,8 @@
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.11.0",
-	"appid": "wx6f9921ca2cd48b48",
+	"libVersion": "2.12.2",
+	"appid": "wxbe66aa83c6c7091d",
 	"projectname": "miniprogram-1",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -120,6 +121,33 @@
 					"name": "showimg",
 					"pathName": "pages/showimage/showimage",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Test1/Test1",
+					"pathName": "pages/Test1/Test1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/quelist/quelist",
+					"pathName": "pages/quelist/quelist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/quelist/quelist",
+					"pathName": "pages/quelist/quelist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/func/func",
+					"pathName": "pages/func/func",
 					"scene": null
 				}
 			]

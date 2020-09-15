@@ -1,0 +1,45 @@
+<!--pages/quelist/quelist.wxml-->
+<view style="width:100%;height:100%">
+	<!-- <swiper indicator-dots="falsetru" style="heigth:100rpx;">
+		<swiper-item style="background:#238cfa">1</swiper-item>
+		<swiper-item>2</swiper-item>
+		<swiper-item style="background:#238cfa">3</swiper-item>
+	</swiper> -->
+
+	<!-- <view wx:for="{{3}}" class="view">
+		{{item}}
+		<view class="mask"></view>
+	</view> 
+
+	<view class="view" wx:for="{{3}}">
+
+		<view class="mask"></view>
+	</view> -->
+
+	<!-- <view class="radiogroup">
+
+		<view class="{{item.checked ? 'iconchecked' : 'iconunchecked'}}" wx:for="{{option}}" bindtap="doSelect" id="{{item.name}}">{{item.name}}</view>
+
+	</view>
+
+
+	<radio>
+		<label>1</label>
+	</radio>
+
+	<view style="width:50rpx;height:50rpx;background:#248cfa;displeay:flex;">
+		<radio color="#999999" style="width:50rpx;height:50rpx"></radio>
+	</view> -->
+
+	<!-- <view class="pos">
+		<view class="item"></view>
+	</view> -->
+
+
+<view class="itemall">
+	<view class="item1">1</view>
+	<view class="item2">2</view>
+</view>
+
+
+</view>

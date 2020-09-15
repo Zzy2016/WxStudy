@@ -14,6 +14,21 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+function func(params) {
+  console.log("params",params)
+  console.log("hanshu 1")
+  return 3
+}
+
+function toCel(fahr) {
+  return (5/9)*(fahr-32)
+}
+
 module.exports = {
   formatTime: formatTime
 }
+
+module.exports.func=func
+module.exports.toCel=toCel
+
+

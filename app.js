@@ -14,7 +14,7 @@ App({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
 
-        console.log(res)
+        // console.log(res)
       }
     })
     // 获取用户信息
@@ -40,11 +40,11 @@ App({
   },
 
   onShow(){
-      console.log("-----------show")
+      // console.log("-----------show")
   },
 
   onHide(){
-    console.log("-----------hide")
+    // console.log("-----------hide")
   },
 
   globalData: {

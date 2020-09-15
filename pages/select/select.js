@@ -10,6 +10,7 @@ Page({
     ansindex: 12,
     ansArr: [1, 2, 3, 4, 5],
     currentQusIndex: 0, //当前题目index
+    name:"123",
   },
 
 

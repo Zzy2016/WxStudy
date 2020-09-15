@@ -9,3 +9,14 @@ radio .wx-radio-input.wx-radio-input-checked::before {
   color: #248cfa; /* 白色勾  */
   transform: translate(-50%, -50%) scale(1);  
 }
+
+checkbox{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/*checkbox 选项框大小  */
+checkbox .wx-checkbox-input {
+  width: 40rpx;
+  height: 40rpx;  
+}

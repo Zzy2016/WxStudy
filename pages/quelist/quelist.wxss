@@ -1,0 +1,96 @@
+/* pages/quelist/quelist.wxss */
+.view {
+  height: 100rpx;
+  background: #fafafa;
+  margin-bottom: 10rpx;
+  position: relative;
+}
+
+.mask {
+  height: 100rpx;
+  width: 100%;
+  background: #10999999;
+  margin-bottom: 10rpx;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+}
+
+.iconchecked {
+  background: #248cfa;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  line-height: 40rpx;
+  text-align: center;
+  color: #ffffff;
+  border: 1rpx solid #248cfa;
+}
+
+.iconunchecked {
+  background: #ffffff;
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  line-height: 40rpx;
+  text-align: center;
+  color: #333333;
+  border: 1rpx solid #999999;
+}
+
+.radiogroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50rpx;
+  background: #999999;
+  align-items: center;
+}
+
+/* radio .wx-radio-input {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%; /* 圆角 */
+/* border: 2rpx solid red; */
+/* background: #ffffff
+} */
+
+
+.pos {
+  width: 100%;
+  height: 400rpx;
+  background-color: #248cfa;
+  position: absolute;
+}
+
+.item {
+  position: absolute;
+  bottom: 0;
+  right: 100rpx;
+  background: #999999;
+  width: 50px;
+  height: 50px;
+}
+
+.itemall {
+  display: flex;
+  flex-direction: row;
+  background: #248cfa;
+  width: 100%;
+  height: 400rpx;
+}
+
+.item1 {
+  width: 100rpx;
+  height: 100rpx;
+  background: #999999;
+  padding: 5px;
+}
+
+.item2 {
+  width: 100rpx;
+  height: 100rpx;
+  background: #666666;
+  margin: 5px;
+}
